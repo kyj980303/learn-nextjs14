@@ -17,7 +17,7 @@ export default async function MovieDetail({
 }: {
   params: { id: string };
 }) {
-  const movie = await getMovie(id);
-  const videos = await getVideos(id);
+  // Promise.all : 동시에 데이터 호출
+  const [movie, videos] = await Promise.all([getMovie(id), getVideos(id)]);
   return <h1>{movie.title}</h1>;
 }
