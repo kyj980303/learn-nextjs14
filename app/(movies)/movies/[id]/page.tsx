@@ -7,8 +7,6 @@ export default async function MovieDetail({
 }: {
   params: { id: string };
 }) {
-  // Promise.all : 동시에 데이터 호출
-
   return (
     <div>
       <Suspense fallback={<h1>Loading movie info</h1>}>
