@@ -4,7 +4,9 @@
   "description": "study Next.js 14",
   "main": "index.js",
   "scripts": {
-    "dev": "next dev"
+    "dev": "next dev",
+    "bild": "next buid",
+    "start": "next start"
   },
   "keywords": [],
   "author": "",
